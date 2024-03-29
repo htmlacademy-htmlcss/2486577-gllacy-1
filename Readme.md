@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Viktor Komarov](https://up.htmlacademy.ru/htmlcss-individual/1/user/2486577).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Малиновская`.
 
 ---
 
