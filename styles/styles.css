@@ -217,6 +217,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
@@ -321,10 +322,6 @@ body {
   width: 500px;
 }
 
-.order {
-  width: 500px;
-}
-
 .order input[type="text"] {
   font-weight: 400;
   font-size: 16px;
@@ -368,6 +365,20 @@ body {
 }
 
 /* Подвал */
+.main-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-media-list,
+.company-standarts-list {
+  margin: 0;
+  padding: 0;
+}
+
+
 .company-standarts-link {
   text-decoration: none;
   font-size: 14px;
@@ -390,6 +401,13 @@ body {
 }
 
 /* Хлебные крошки */
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
 .breadcrumbs-item {
   text-decoration: none;
   font-weight: 700;
@@ -435,4 +453,20 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.button-more-wrapper {
+  margin-left:  auto;
 }
