@@ -26,6 +26,7 @@
     </header>
 
     <main class="ice-cream-catalog">
+      <div class="page-container">
       <ul class="breadcrumbs">
         <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
         <li><a class="breadcrumbs-item" href=#>Каталог</a></li>
@@ -106,6 +107,7 @@
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог мороженого</h2>
+        <div class="catalog-wrapper">
         <ul class="catalog-list">
           <li class="catalog-item">
             <header>
@@ -204,18 +206,24 @@
             <p><span class="price">280 ₽/кг</span><a class="button button-catalog"><img src="images/buckets.svg" width="16" height="16" alt="Корзина"></a></p>
           </li>
         </ul>
-        <button class="button show-more" type="button">Показать еще</button>
-        <ul class="pagination-list">
-          <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
-        </ul>
+        </div>
+        <div class="pagination-wrapper">
+          <div class="button-more-wrapper">
+            <button class="button show-more" type="button">Показать еще</button>
+          </div>
+          <ul class="pagination-list">
+            <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+          </ul>
+        </div>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
-      <ul class="social-media-list">
+      <ul class="footer-social-media-list">
         <li class="social-media-item"><a class="social-media" href="https://t.me/htmlacademy"><img src="images/logo/telegram.svg" alt="Лого телеграма" width="24" height="24"></a></li>
         <li class="social-media-item"><a class="social-media" href="https://vk.com/htmlacademy"><img src="images/logo/vk.svg" alt="Лого vk" width="24" height="24"></a></li>
         <li class="social-media-item"><a class="social-media" href="https://www.youtube.com/user/htmlacademyru"><img src="images/logo/youtube.svg" alt="Лого ютуба" width="24" height="24"></a></li>
