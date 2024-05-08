@@ -174,19 +174,20 @@ body {
 }
 
 .ads-description {
-  width: 470px;
+  width: 455px;
+  padding-left: 70px;
 }
 
 .ads-photos {
-  width: 700px;
+  width: 645px;
+  margin-left: 20px;
   display: flex;
-  justify-content: space-between;
 }
 
 .ads-photo-active {
   max-width: 367px;
   max-height: 507px;
-  padding-top: 21px;
+  margin-right: 57px;
 }
 
 .ads-photo-inactive {
@@ -241,6 +242,7 @@ body {
   height: 12px;
   border-radius: 50%;
   border:none;
+  cursor: pointer;
 }
 
 .social-media-item {
@@ -310,23 +312,26 @@ body {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  margin-bottom: 80px;
+}
+
+.catalog-header {
+  margin-bottom: 56px;
 }
 
 .catalog-list {
   margin: 0;
-  margin-top: 100px;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
 }
 
 .catalog-item {
-  width: 190px;
+  margin-top: 51px;
   padding: 0 40px 24px;
   background-color: #FCFCFC;
-  margin-bottom: 91px;
 }
 
 .price-wrapper {
@@ -344,6 +349,7 @@ body {
   line-height: 24px;
   margin: 0;
   margin-bottom: 8px;
+  margin-top: 8px;
   padding: 0;
 }
 
@@ -392,28 +398,42 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 505px 505px;
+  gap: 32px 40px;
 }
 
 .about-us-fact {
-  width: 505px;
-  margin-bottom: 40px;
   color:#565C66;
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
-.about-us-fact:nth-child(n+2){
-  margin-bottom: 0;
+.about-us-fact::before {
+  content: "";
+  background: center/32px no-repeat;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #2D3440;
+  margin-right: 16px;
 }
 
+.fact-ice-cream::before {
+  background-image: url("../images/icecream-logo.svg");
+}
 
-.about-us-fact p {
-  padding: 0;
-  margin: 0;
-  margin-left: 16px;
+.fact-quality::before {
+  background-image: url("../images/leaf.svg");
+}
+
+.fact-cow::before {
+  background-image: url("../images/cow.svg");
+}
+
+.fact-thermometer::before {
+  background-image: url("../images/thermometer.svg");
 }
 
 /* Блог */
@@ -482,6 +502,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 12px 32px;
+  display: block;
 }
 
 /* Доставка */
@@ -521,33 +542,22 @@ body {
   margin: 64px 64px 64px 0;
 }
 
-.order-info-form p {
+.order-info-form > p {
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
 }
 
 .input-order-wrapper {
+  margin-top: 32px;
+  margin-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.order label,
-.order input {
-  display: block;
-}
-
-.order-label {
-  margin-bottom: 20px;
-}
-
-.order-label:last-child {
-  margin-bottom: 32px;
-}
-
-.order-label input {
-  margin-top: 8px;
+.input-order-wrapper > p {
+  display: flex;
+  flex-direction: column;
 }
 
 .order input[type="text"] {
@@ -557,16 +567,22 @@ body {
   padding: 14px 0 14px 16px;
 }
 
+.input-field {
+  margin: 0;
+  padding: 0;
+}
+
 .input-date {
-  width: 101px;
+  width: 117px;
 }
 
 .input-phone {
-  width: 272px;
+  width: 287px;
 }
 
 .input-address {
-  width: 404px;
+  margin-top: 20px;
+  width: 420px;
 }
 
 .order-label {
@@ -574,6 +590,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
+  margin-bottom: 8px;
 }
 
 /* Контакты */
@@ -677,6 +694,17 @@ body {
   font-weight: 700;
 }
 
+.company-standarts-active {
+  position: relative;
+}
+
+.company-standarts-active::before {
+  content: url("../images/heart.svg");
+  position: absolute;
+  top: 2px;
+  left: -24px;
+}
+
 .about-text {
   margin-top: 15px;
   font-size: 12px;
@@ -717,6 +745,7 @@ body {
 /* Фильтры поиска */
 .catalog-filter {
   margin-top: 40px;
+  margin-bottom: 44px;
   display: flex;
   flex-wrap: wrap;
   width: 830px;
@@ -823,6 +852,7 @@ body {
 }
 
 .pagination-wrapper {
+  margin-top: 57px;
   display: flex;
   justify-content: space-between;
 }
@@ -836,8 +866,9 @@ body {
   flex-wrap: wrap;
   width: 120px;
   justify-content: space-between;
+  align-self: center;
 }
 
 .button-more-wrapper {
-  margin-left:  auto;
+  margin-left:  488px;
 }
