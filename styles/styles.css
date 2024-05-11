@@ -116,11 +116,36 @@ body {
 
 .navigation-link {
   margin: 0;
-  padding: 0 16px;
-  display: block;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+}
+
+.navigation-link:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 32px;
+}
+
+.navigation-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 32px;
+  border: 1px solid #2D3440;
+}
+
+.navigation-link:active {
+  background-color: #FFFFFF;
+  border-radius: 32px;
+}
+
+.symbol-link-left {
+  margin-right: 6px;
+}
+
+.symbol-link-right {
+  margin-left: 6px;
 }
 
 .navigation-user {
@@ -130,7 +155,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 450px;
+  max-width: 500px;
   margin-left: auto;
 }
 
@@ -138,9 +163,37 @@ body {
   font-size: 14px;
 }
 
-.navigation-user .phone-link {
+.button-link {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 32px;
+}
+
+.link-search {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.link-search svg {
+  margin: 0 auto;
+}
+
+.phone-link > a {
   font-size: 16px;
   font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.navigation-user li {
+  margin-right: 16px;
+}
+
+.navigation-user li:last-child {
+  margin-right: 0;
 }
 
 .page-container {
@@ -184,6 +237,21 @@ body {
   display: flex;
 }
 
+.ads-photos > li {
+  position: relative;
+}
+
+.ads-photos > li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
+  top: 20%;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+}
+
 .ads-photo-active {
   max-width: 367px;
   max-height: 507px;
@@ -195,6 +263,7 @@ body {
   height: 150px;
   width: 100px;
   margin-right: 41px;
+  opacity: 0.4;
 }
 
 .ads-photo-inactive:last-child{
@@ -204,6 +273,18 @@ body {
 .ads-photo-inactive img {
   width: 100%;
   height: 100%;
+}
+
+.ads-photos-wrapper {
+  position: relative;
+}
+
+.ads-photos-slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 367px;
+  bottom: 50%;
 }
 
 .add-social-media-list {
